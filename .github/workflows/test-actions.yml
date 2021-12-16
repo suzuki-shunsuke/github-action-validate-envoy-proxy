@@ -1,0 +1,19 @@
+---
+name: test-actions
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: int128/aqua-action@v1
+        with:
+          version: v0.8.6 # renovate: depName=suzuki-shunsuke/aqua
+
+      - uses: ./
+        with:
+          path: examples/invalid-envoy.yaml
+          image: envoyproxy/envoy-alpine:v1.20.1
+          github_comment_opts: -k validate-envoy -var envoy_config_path:examples/invalid-envoy.yaml

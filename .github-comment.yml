@@ -1,0 +1,15 @@
+---
+# https://github.com/suzuki-shunsuke/github-comment
+exec:
+  validate-envoy:
+  - when: ExitCode != 0
+    template: |
+      ## :x: Invalid Envoy Config ({{.Vars.envoy_config_path}})
+
+      {{template "link" .}}
+
+      Please fix the configuration.
+
+      {{template "join_command" .}}
+
+      {{template "hidden_combined_output" .}}
