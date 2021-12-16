@@ -11,12 +11,11 @@ If the configuration file is invalid, this action posts a comment to Pull Reques
 ## Example
 
 * [.github/workflows/test-actions.yml](.github/workflows/test-actions.yml)
-* [.github-comment.yml](.github-comment.yml)
 * [aqua.yaml](aqua.yaml)
 
-![image](https://user-images.githubusercontent.com/13323303/146328887-a92e122f-d9ed-4485-a364-0720bf8d4fff.png)
+![image](https://user-images.githubusercontent.com/13323303/146356131-27d9ae75-1c61-4ec0-9f1f-f4f6f15b6b05.png)
 
-https://github.com/suzuki-shunsuke/github-action-validate-envoy-proxy/pull/1#issuecomment-995517990
+https://github.com/suzuki-shunsuke/github-action-validate-envoy-proxy/pull/10#issuecomment-995644505
 
 ## Requirements
 
