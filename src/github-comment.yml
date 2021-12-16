@@ -1,10 +1,10 @@
 ---
 # https://github.com/suzuki-shunsuke/github-comment
 exec:
-  validate-envoy:
+  default:
   - when: ExitCode != 0
     template: |
-      ## :x: Invalid Envoy Config ({{.Vars.envoy_config_path}})
+      ## :x: Invalid Envoy Config ({{env "INPUT_PATH"}})
 
       {{template "link" .}}
 

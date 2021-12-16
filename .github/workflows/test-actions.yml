@@ -24,4 +24,3 @@ jobs:
         with:
           path: examples/invalid-envoy.yaml
           image: envoyproxy/envoy-alpine:v1.20.1
-          github_comment_opts: -k validate-envoy -var envoy_config_path:examples/invalid-envoy.yaml
