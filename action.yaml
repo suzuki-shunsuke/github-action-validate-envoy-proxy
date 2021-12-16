@@ -1,0 +1,32 @@
+name: Validate Envoy Config
+description: Validate Envoy Proxy Configuration
+inputs:
+  path:
+    description: 'Envoy Configuration file path'
+    required: true
+  image:
+    description: 'Envoy Docker Image'
+    required: true
+  github_token:
+    description: 'GitHub Access Token'
+    required: false
+    default: ${{ github.token }}
+  github_comment_opts:
+    description: 'github-comment options'
+    required: false
+runs:
+  using: composite
+  steps:
+    - run: docker pull ${{ inputs.image }}
+      shell: bash
+
+    - name: Validate Envoy Config
+      run: |
+        github-comment exec \
+          ${{ inputs.github_comment_opts }} -- \
+          docker run --rm --entrypoint envoy \
+          -v "$PWD:/workspace" -w /workspace ${{ inputs.image }} \
+          --mode validate -c ${{ inputs.path }}
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github_token }}
