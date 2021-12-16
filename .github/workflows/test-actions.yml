@@ -3,6 +3,10 @@ name: test-actions
 on:
   pull_request:
     branches: [main]
+    paths:
+      - examples/invalid-envoy.yaml
+      - .github/workflows/test-actions.yaml
+      - action.yaml
 jobs:
   default:
     runs-on: ubuntu-latest
@@ -11,6 +15,10 @@ jobs:
       - uses: int128/aqua-action@v1
         with:
           version: v0.8.6 # renovate: depName=suzuki-shunsuke/aqua
+
+      - run: github-comment hide
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - uses: ./
         with:
