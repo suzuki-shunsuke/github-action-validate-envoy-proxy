@@ -10,6 +10,8 @@ If the configuration file is invalid, this action posts a comment to Pull Reques
 
 ## Example
 
+[.github/workflows/test-actions.yml](.github/workflows/test-actions.yml)
+
 ![image](https://user-images.githubusercontent.com/13323303/146328887-a92e122f-d9ed-4485-a364-0720bf8d4fff.png)
 
 https://github.com/suzuki-shunsuke/github-action-validate-envoy-proxy/pull/1#issuecomment-995517990
