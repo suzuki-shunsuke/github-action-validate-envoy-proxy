@@ -1,3 +1,5 @@
+# This configuration file is invalid.
+# This is used for demo.
 admin:
   address:
     socket_address: { address: 127.0.0.1, port_value: 9901 }
@@ -25,7 +27,7 @@ static_resources:
           http_filters:
           - name: envoy.filters.http.router
   clusters:
-  - name: some_service
+  - name: foo
     connect_timeout: 0.25s
     type: STATIC
     lb_policy: ROUND_ROBIN
