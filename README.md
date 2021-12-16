@@ -38,6 +38,12 @@ please see the document of github-comment.
 
 https://github.com/suzuki-shunsuke/github-comment
 
+## Environment Variables
+
+The following environment variables can be used in github-comment's template.
+
+* `INPUT_PATH`: Envoy Configuration File Path
+
 ## License
 
 [MIT](LICENSE)

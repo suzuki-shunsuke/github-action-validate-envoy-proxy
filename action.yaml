@@ -46,3 +46,4 @@ runs:
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.github_token }}
+        INPUT_PATH: ${{ inputs.path }}
