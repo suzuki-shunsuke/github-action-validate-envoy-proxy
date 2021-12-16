@@ -16,6 +16,13 @@ If the configuration file is invalid, this action posts a comment to Pull Reques
 
 https://github.com/suzuki-shunsuke/github-action-validate-envoy-proxy/pull/1#issuecomment-995517990
 
+## Customization
+
+If you want to customize the Pull Request Comment or hide old comments,
+please see the document of github-comment.
+
+https://github.com/suzuki-shunsuke/github-comment
+
 ## Requirements
 
 * [github-comment](https://github.com/suzuki-shunsuke/github-comment)
