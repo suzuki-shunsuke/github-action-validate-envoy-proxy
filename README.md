@@ -16,13 +16,6 @@ If the configuration file is invalid, this action posts a comment to Pull Reques
 
 https://github.com/suzuki-shunsuke/github-action-validate-envoy-proxy/pull/1#issuecomment-995517990
 
-## Customization
-
-If you want to customize the Pull Request Comment or hide old comments,
-please see the document of github-comment.
-
-https://github.com/suzuki-shunsuke/github-comment
-
 ## Requirements
 
 * [github-comment](https://github.com/suzuki-shunsuke/github-comment)
@@ -30,6 +23,18 @@ https://github.com/suzuki-shunsuke/github-comment
 ## Inputs, Outputs
 
 Please see [action.yaml](action.yaml)
+
+## Docker Authentication
+
+This action pulls the Docker Image for Envoy Proxy.
+In this action the authentication isn't executed, so please do it in advance if needed.
+
+## Customization
+
+If you want to customize the Pull Request Comment or hide old comments,
+please see the document of github-comment.
+
+https://github.com/suzuki-shunsuke/github-comment
 
 ## License
 
