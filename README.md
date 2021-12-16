@@ -10,7 +10,9 @@ If the configuration file is invalid, this action posts a comment to Pull Reques
 
 ## Example
 
-[.github/workflows/test-actions.yml](.github/workflows/test-actions.yml)
+* [.github/workflows/test-actions.yml](.github/workflows/test-actions.yml)
+* [.github-comment.yml](.github-comment.yml)
+* [aqua.yaml](aqua.yaml)
 
 ![image](https://user-images.githubusercontent.com/13323303/146328887-a92e122f-d9ed-4485-a364-0720bf8d4fff.png)
 
