@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
-      - uses: aquaproj/aqua-installer@a34cc75221784a96e3caf4bbf716ff67a160a3f1 # v1.0.0
+      - uses: aquaproj/aqua-installer@a39f721a15ed34ccbc85706e6e8ae8572c9ca9c6 # v1.2.0
         with:
           aqua_version: v1.12.1
 
